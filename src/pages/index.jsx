@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>IN PROGRESS Team Keep Site</title>
+        <title>Team Keep Home</title>
         <meta
           name="description"
           content="Team Keep is a nonprofit dedicated towards helping those vulnerable with identification services"

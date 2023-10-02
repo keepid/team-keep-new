@@ -6,7 +6,6 @@ import {
 import Image from 'next/image'
 import myApplicationPng from '@/images/myApplication.png'
 
-
 export const IdentificationInformationLeft = () => {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
@@ -22,9 +21,9 @@ export const IdentificationInformationLeft = () => {
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Team Keep is dedicated to see the oppressed gain security and
-                stability in the digital age. Our product, Keep.id, is a
-                HIPAA-compliant application that serves partner organizations in
-                the Philadelphia community.
+                stability in the digital age. Our product, Keep.id, aims to
+                reduce barriers in identification services in the Philadelphia
+                community.
               </p>
             </div>
           </div>

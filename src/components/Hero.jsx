@@ -11,14 +11,14 @@ export const Hero = ({ resultRef }) => {
         <div className="lg:py-42 mx-auto max-w-2xl py-32 sm:py-48">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className=" relative rounded-full bg-slate-500/75 px-3 py-1 text-sm leading-6 text-white ring-2 ring-gray-100/0 hover:ring-gray-100/10">
-              Announcing our May Fundraiser.{'  '}
+              Join us at the University of Pennsylvania Career Fair on Feb 2nd{'  '}
               <a
-                href="https://drive.google.com/file/d/1qdGo9fPhj9HttMYBvtlD3DkRD-Yy3lls/view?usp=sharing"
+                href="https://forms.gle/T57QEJdeCMtcFNzh6"
                 target="_blank"
                 className="font-semibold text-grey-light"
               >
                 <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                Our open roles<span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>

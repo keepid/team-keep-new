@@ -11,7 +11,7 @@ export const Hero = ({ resultRef }) => {
         <div className="lg:py-42 mx-auto max-w-2xl py-32 sm:py-48">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className=" relative rounded-full bg-slate-500/75 px-3 py-1 text-sm leading-6 text-white ring-2 ring-gray-100/0 hover:ring-gray-100/10">
-              Join us at the University of Pennsylvania Career Fair on Feb 2nd{'  '}
+              Join us at the University of Pennsylvania Career Fair on Feb 2nd!{'   '}
               <a
                 href="https://forms.gle/T57QEJdeCMtcFNzh6"
                 target="_blank"

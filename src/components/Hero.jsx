@@ -11,21 +11,21 @@ export const Hero = ({ resultRef }) => {
         <div className="lg:py-42 mx-auto max-w-2xl py-32 sm:py-48">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className=" relative rounded-full bg-slate-500/75 px-3 py-1 text-sm leading-6 text-white ring-2 ring-gray-100/0 hover:ring-gray-100/10">
-              Join us at the University of Pennsylvania Career Fair on Feb 2nd!{'   '}
+              To support our cause please donate here:  {'   '}
               <a
-                href="https://forms.gle/T57QEJdeCMtcFNzh6"
+                href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
                 target="_blank"
                 className="font-semibold text-grey-light"
               >
                 <span className="absolute inset-0" aria-hidden="true" />
-                Our open roles<span aria-hidden="true">&rarr;</span>
+                Donate<span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Empower people who experience homeslessness
-            </h1>
+              Empower people who experience homelessness
+            </h1> 
             <p className="mt-6 text-lg leading-8 text-white">
               Our online product, Keep.id, helps non-profits with identification
               services for those experiencing homelessness.

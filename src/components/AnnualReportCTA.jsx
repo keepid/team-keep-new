@@ -20,7 +20,7 @@ export const AnnualReportCTA = (props) => {
               2023 Annual Report
             </a>
             <a
-              href="https://www.canva.com/design/DAFUy5hOxIY/fDmczXWlTtWtKgekVSHuig/view?utm_content=DAFUy5hOxIY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              href="https://www.canva.com/design/DAFUy5hOxIY/Jc8sPqRNGnmFpnpQehvgUg/view?utm_content=DAFUy5hOxIY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
               target="_blank"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >

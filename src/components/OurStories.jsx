@@ -12,6 +12,7 @@ export const OurStories = () => {
         const { status } = responseJSON
         if (status === 'ok') {
           setMediumData(responseJSON.items)
+          console.log(responseJSON.items)
         }
       })
   }, [])
@@ -25,7 +26,7 @@ export const OurStories = () => {
       .trim()
     return `"${shorteneddDescription}..."`
   }
-
+  mediumData.map((article) => console.log(article.content))
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -42,7 +43,11 @@ export const OurStories = () => {
             <article key={article.guid} className="flex flex-col items-start">
               <div className="relative w-full">
                 <img
-                  src={article.thumbnail}
+                  src={
+                    article.content
+                      .toString()
+                      .match(/<img[^>]+src="([^">]+)"/)[1]
+                  }
                   alt=""
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                 />

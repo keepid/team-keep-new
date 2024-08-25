@@ -3,11 +3,23 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import whyNotProsper from '@/images/logos/whyNotProsper.png'
 import face2face from '@/images/logos/face2face.png'
-import safeHarborEaston from '@/images/logos/safeHarborEaston.png'
+import andreeCollective from '@/images/logos/andreeCollective.png'
 const sponsors = [
-  { name: 'Why Not Prosper', logo: whyNotProsper , website: "https://www.why-not-prosper.org/"},
-  { name: 'Face to Face', logo: face2face, website: "https://facetofacegermantown.org/" },
-  { name: 'Safe Harbor Easton', logo: safeHarborEaston, website: "https://www.safeharboreaston.com/" }
+  {
+    name: 'Why Not Prosper',
+    logo: whyNotProsper,
+    website: 'https://www.why-not-prosper.org/',
+  },
+  {
+    name: 'Face to Face',
+    logo: face2face,
+    website: 'https://facetofacegermantown.org/',
+  },
+  {
+    name: 'Andree Collective',
+    logo: andreeCollective,
+    website: 'https://www.andreecollective.org/',
+  },
 ]
 
 export function Partners() {
@@ -20,7 +32,8 @@ export function Partners() {
         <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
           {sponsors.map((sponsor) => (
             <a
-              href={sponsor.website} target="_blank"
+              href={sponsor.website}
+              target="_blank"
               key={sponsor.name}
               className="flex items-center justify-center"
             >

@@ -8,25 +8,19 @@ import { DiamondIcon } from '@/components/DiamondIcon'
 import connorChong from '@/images/people/connorChong.jpg'
 import steffenCornwell from '@/images/people/steffenCornwell.jpg'
 import michaelHagan from '@/images/people/michaelHagan.png'
-import alexTang from '@/images/people/alexTang.png'
-import chiaChen from '@/images/people/chiaiChen.jpg'
-import chrisNguyen from '@/images/people/chrisNguyen.jpg'
 import danielJoo from '@/images/people/danielJoo.png'
-import timothyCho from '@/images/people/timothyCho.png'
 import jacksonFoltz from '@/images/people/jacksonFoltz.jpg'
 import johnOndik from '@/images/people/johnOndik.png'
 import ravindarGujaral from '@/images/people/ravindarGujaral.jpg'
 import karissaForino from '@/images/people/karissaForino.jpg'
 import danTreglia from '@/images/people/danTreglia.jpg'
-import ivyWang from '@/images/people/ivyWang.jpg'
-import tirthaKharel from '@/images/people/tirthaKharel.jpg'
-import sarinnaSung from '@/images/people/sarinnaSung.jpg'
-import philChen from '@/images/people/philChen.jpg'
-import jiaweiShen from '@/images/people/jaiweiShen.jpg'
-import oliviaCao from '@/images/people/oliviaCao.jpg'
-import yiZeng from '@/images/people/yiZeng.jpg'
-import jessicaHung from '@/images/people/jessicaHung.jpg'
-import seanChung from '@/images/people/seanChung.jpg'
+import kaylaWhite from '@/images/people/kaylaWhite.jpg'
+import allisonMi from '@/images/people/allisonMi.png'
+import allyKim from '@/images/people/allyKim.png'
+import danielLee from '@/images/people/danielLee.png'
+import jiayangKuang from '@/images/people/jiayangKuang.jpg'
+import samuelLee from '@/images/people/samuelLee.png'
+
 
 const teams = [
   {
@@ -39,14 +33,9 @@ const teams = [
         image: connorChong,
       },
       {
-        name: 'Ivy Wang',
-        role: 'Chief Marketing Officer',
-        image: ivyWang,
-      },
-      {
-        name: 'Chia Chen',
-        role: 'Chief Design Officer',
-        image: chiaChen,
+        name: 'Steffen Cornwell',
+        role: 'Nonprofit Liaison Lead',
+        image: steffenCornwell,
       },
       {
         name: 'Daniel Joo',
@@ -54,15 +43,10 @@ const teams = [
         image: danielJoo,
       },
       {
-        name: 'Michael Hagan',
-        role: 'Nonprofit Liaison Lead',
-        image: michaelHagan,
-      },
-      {
-        name: 'Steffen Cornwell',
-        role: 'Nonprofit Liaison Lead',
-        image: steffenCornwell,
-      },
+        name: 'Kayla White',
+        role: 'Grantwriting Lead',
+        image: kaylaWhite,
+      }
     ],
   },
   {
@@ -70,19 +54,19 @@ const teams = [
     largeText: 'Board',
     people: [
       {
-        name: 'Michael Hagan',
-        role: 'President',
-        image: michaelHagan,
-      },
-      {
         name: 'Steffen Cornwell',
-        role: 'Treasurer',
+        role: 'President, Treasurer',
         image: steffenCornwell,
       },
       {
         name: 'Jackson Foltz',
         role: 'Secretary',
         image: jacksonFoltz,
+      },
+      {
+        name: 'Michael Hagan',
+        role: '',
+        image: michaelHagan,
       },
       {
         name: 'John Ondik',
@@ -116,61 +100,34 @@ const teams = [
         image: connorChong,
       },
       {
-        name: 'Tirtha Kharel',
+        name: 'Sam Lee',
         role: 'Backend Engineer',
-        image: tirthaKharel,
+        image: samuelLee,
       },
       {
-        name: 'Sarinna Sung',
+        name: 'Daniel Joo',
         role: 'Frontend Engineer',
-        image: sarinnaSung,
+        image: danielJoo,
       },
       {
-        name: 'Phil Chen',
+        name: 'Ally Kim',
         role: 'Frontend Engineer',
-        image: philChen,
+        image: allyKim,
       },
       {
-        name: 'Alex Tang',
+        name: 'Allison Mi',
         role: 'Frontend Engineer',
-        image: alexTang,
-      },
-    ],
-  },
-  {
-    name: 'Keep.id',
-    largeText: 'Design',
-    people: [
-      {
-        name: 'Chia Chen',
-        role: 'Design Lead',
-        image: chiaChen,
+        image: allisonMi,
       },
       {
-        name: 'Jiawei Shen',
-        role: 'Designer',
-        image: jiaweiShen,
-      },
-    ],
-  },
-  {
-    name: 'Keep.id',
-    largeText: 'Marketing',
-    people: [
-      {
-        name: 'Ivy Wang',
-        role: 'Chief Marketing Officer',
-        image: ivyWang,
+        name: 'Jiayang Kuang',
+        role: 'Backend Engineer',
+        image: jiayangKuang,
       },
       {
-        name: 'Jessica Hung',
-        role: 'Marketing Analyst',
-        image: jessicaHung,
-      },
-      {
-        name: 'Sean Chung',
-        role: 'Marketing Analyst',
-        image: seanChung,
+        name: 'Daniel Lee',
+        role: 'Backend Engineer',
+        image: danielLee,
       },
     ],
   },
@@ -179,20 +136,21 @@ const teams = [
     largeText: 'Nonprofit Liaisons',
     people: [
       {
-        name: 'Michael Hagan',
-        role: 'Nonprofit Liaison Lead',
-        image: michaelHagan,
-      },
-      {
         name: 'Steffen Cornwell',
         role: 'Nonprofit Liaison Lead',
         image: steffenCornwell,
-      },
+      }
+    ],
+  },
+  {
+    name: 'Keep.id',
+    largeText: 'Grantwriting',
+    people: [
       {
-        name: 'Olivia Cao',
-        role: 'Nonprofit Liaison',
-        image: oliviaCao,
-      },
+        name: 'Kayla White',
+        role: 'Grantwriting Lead',
+        image: kaylaWhite,
+      }
     ],
   },
   {
@@ -208,12 +166,7 @@ const teams = [
         name: 'Steffen Cornwell',
         role: 'Product Manager',
         image: steffenCornwell,
-      },
-      {
-        name: 'Yi Zeng',
-        role: 'Product Manager',
-        image: yiZeng,
-      },
+      }
     ],
   },
   {
@@ -224,17 +177,7 @@ const teams = [
         name: 'Daniel Joo',
         role: 'Chief Operations Officer',
         image: danielJoo,
-      },
-      {
-        name: 'Chris Nguyen',
-        role: 'Ops and Legal Analyst',
-        image: chrisNguyen,
-      },
-      {
-        name: 'Tim Cho',
-        role: 'Ops and Legal Analyst',
-        image: timothyCho,
-      },
+      }
     ],
   },
 ]

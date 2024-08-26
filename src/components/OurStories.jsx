@@ -12,7 +12,6 @@ export const OurStories = () => {
         const { status } = responseJSON
         if (status === 'ok') {
           setMediumData(responseJSON.items)
-          console.log(responseJSON.items)
         }
       })
   }, [])
@@ -26,7 +25,6 @@ export const OurStories = () => {
       .trim()
     return `"${shorteneddDescription}..."`
   }
-  mediumData.map((article) => console.log(article.content))
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

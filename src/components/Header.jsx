@@ -47,12 +47,12 @@ export function Header() {
               {item.name}
             </Link>
           ))}
-          <a
+          <Button
             href="https://keep.id"
-            className="text-md m-auto items-center font-semibold leading-6 text-gray-100"
+            className="bg-slate-700 text-md m-auto items-center font-semibold leading-6 hover:bg-slate-600"
           >
-            Keep.id
-          </a>
+            Visit Keep.id
+          </Button>
           <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
             <Button
               href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
@@ -107,14 +107,31 @@ export function Header() {
                 <h1 className="hero-header pb-6 text-black">
                   Help us build a safety net for our most vulnerable citizens.
                 </h1>
-                <div className="bg-purple-primary lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-                  <Button
-                    href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
-                    target="_blank"
-                  >
-                    Donate Now
-                  </Button>
-                </div>
+
+                <a href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
+                    target="_blank">
+                  <div className="bg-purple-primary lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
+                    <Button
+                      className="bg-purple-primary"
+                      href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
+                      target="_blank"
+                    >
+                      Donate Now
+                    </Button>
+                  </div>
+                </a>
+                <a href="https://keep.id"
+                    target="_blank">
+                  <div className="mt-4 bg-slate-700 lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
+                    <Button
+                      className="bg-slate-700"
+                      href="https://keep.id"
+                      target="_blank"
+                    >
+                      Visit Keep.id
+                    </Button>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

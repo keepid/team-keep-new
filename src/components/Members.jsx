@@ -20,6 +20,10 @@ import allyKim from '@/images/people/allyKim.png'
 import danielLee from '@/images/people/danielLee.png'
 import jiayangKuang from '@/images/people/jiayangKuang.jpg'
 import samuelLee from '@/images/people/samuelLee.png'
+import michaelPorter from '@/images/people/michaelPorter.jpg'
+import nancyPham from '@/images/people/nancyPham.jpg'
+import timLiang from '@/images/people/timLiang.png'
+import anthonyYang from '@/images/people/anthonyYang.png'
 
 
 const teams = [
@@ -100,11 +104,6 @@ const teams = [
         image: connorChong,
       },
       {
-        name: 'Sam Lee',
-        role: 'Backend Engineer',
-        image: samuelLee,
-      },
-      {
         name: 'Daniel Joo',
         role: 'Frontend Engineer',
         image: danielJoo,
@@ -115,20 +114,30 @@ const teams = [
         image: allyKim,
       },
       {
-        name: 'Allison Mi',
+        name: 'Sam Lee',
+        role: 'Backend Engineer',
+        image: samuelLee,
+      },
+      {
+        name: 'Tim Liang',
         role: 'Frontend Engineer',
-        image: allisonMi,
+        image: timLiang,
       },
       {
-        name: 'Jiayang Kuang',
-        role: 'Backend Engineer',
-        image: jiayangKuang,
+        name: 'Nancy Pham',
+        role: 'Frontend Engineer',
+        image: nancyPham,
       },
       {
-        name: 'Daniel Lee',
-        role: 'Backend Engineer',
-        image: danielLee,
+        name: 'Michael Porter',
+        role: 'Frontend Engineer',
+        image: michaelPorter,
       },
+      {
+        name: 'Anthony Yang',
+        role: 'Frontend Engineer',
+        image: anthonyYang,
+      }
     ],
   },
   {

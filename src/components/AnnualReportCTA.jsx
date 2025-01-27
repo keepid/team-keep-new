@@ -13,6 +13,13 @@ export const AnnualReportCTA = (props) => {
 
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
+              href="https://www.canva.com/design/DAGaDhBzUpU/9cZ_XXya0cE5KFs2LCr9FQ/view?utm_content=DAGaDhBzUpU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf349b0a254"
+              target="_blank"
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              2024 Annual Report
+            </a>
+            <a
               href="https://www.canva.com/design/DAF3NQ0yO_I/xZ4DhoLex6Zt1UaKmeWVng/view?utm_content=DAF3NQ0yO_I&utm_campaign=designshare&utm_medium=link&utm_source=editor"
               target="_blank"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

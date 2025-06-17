@@ -21,6 +21,8 @@ import michaelPorter from '@/images/people/michaelPorter.jpg'
 import nancyPham from '@/images/people/nancyPham.jpg'
 import timLiang from '@/images/people/timLiang.png'
 import vanessaChung from '@/images/people/vanessaChung.jpg'
+import thomasCordingley from '@/images/people/thomasCordingley.png'
+import davidFu from '@/images/people/davidFu.jpg'
 
 
 const teams = [
@@ -104,6 +106,16 @@ const teams = [
         name: 'Vanessa Chung',
         role: 'Backend Engineer',
         image: vanessaChung,
+      },
+      {
+        name: 'Thomas Cordingley',
+        role: 'Frontend Engineer',
+        image: thomasCordingley,
+      },
+      {
+        name: 'David Fu',
+        role: 'Frontend Engineer',
+        image: davidFu,
       },
       {
         name: 'Daniel Joo',

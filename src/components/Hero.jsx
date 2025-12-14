@@ -13,7 +13,7 @@ export const Hero = ({ resultRef }) => {
             <div className=" relative rounded-full bg-slate-500/75 px-3 py-1 text-sm leading-6 text-white ring-2 ring-gray-100/0 hover:ring-gray-100/10">
               To support our cause please donate here:  {'   '}
               <a
-                href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
+                href="https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty"
                 target="_blank"
                 className="font-semibold text-grey-light"
               >

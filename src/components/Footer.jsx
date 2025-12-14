@@ -9,7 +9,7 @@ const navigation = {
   getInvolved: [
     {
       name: 'Donate',
-      href: 'https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC',
+      href: 'https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty',
     },
     {
       name: 'Volunteer',

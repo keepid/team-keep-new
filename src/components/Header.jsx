@@ -55,7 +55,7 @@ export function Header() {
           </Button>
           <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
             <Button
-              href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
+              href="https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty"
               target="_blank"
               className="bg-purple-primary"
             >
@@ -108,12 +108,12 @@ export function Header() {
                   Help us build a safety net for our most vulnerable citizens.
                 </h1>
 
-                <a href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
+                <a href="https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty"
                     target="_blank">
                   <div className="bg-purple-primary lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
                     <Button
                       className="bg-purple-primary"
-                      href="https://www.paypal.com/donate/?hosted_button_id=UZ3C7N5LSXQQC"
+                      href="https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty"
                       target="_blank"
                     >
                       Donate Now

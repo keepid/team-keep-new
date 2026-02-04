@@ -10,9 +10,9 @@ const outreachPrograms = [
         website: 'https://facetofacegermantown.org/',
         description: 'We partner with Face to Face to provide essential identification services to Germantown.',
         activities: [
-            'Host a computer lab to assist community members with digital services',
-            'Work with their birth certificate clinic to help attendees obtain vital documents',
-            'Provide social security card applications and assistance to clinic attendees',
+            'Host a weekly computer lab to assist community members with digital services from job searches to benefits applications',
+            'Work with their birth certificate clinic to help attendees store digital copies of vital documents',
+            'Assist clinic attendees with completing social security card applications',
         ],
     },
 ]
@@ -33,7 +33,7 @@ export function Outreach() {
                             key={program.name}
                             className="rounded-2xl bg-white p-6 sm:p-8 shadow-lg"
                         >
-                            <div className="flex flex-col items-center sm:flex-row sm:items-start gap-6">
+                            <div className="flex flex-col items-center sm:flex-row sm:items-center gap-6">
                                 <div className="flex-shrink-0">
                                     <a
                                         href={program.website}

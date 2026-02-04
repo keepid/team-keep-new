@@ -5,7 +5,7 @@ import face2face from '@/images/logos/face2face.png'
 
 const outreachPrograms = [
     {
-        name: 'Face2Face',
+        name: 'Face toFace',
         logo: face2face,
         website: 'https://facetofacegermantown.org/',
         description: 'We partner with Face2Face to provide essential identification services to Germantown.',

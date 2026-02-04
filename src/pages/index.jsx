@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
 import { Partners } from '@/components/Partners'
+import { Outreach } from '@/components/Outreach'
 import { IdentificationInformationDark } from '@/components/IdentificationInformationDark'
 import { IdentificationInformationLeft } from '@/components/IdentificationInformationLeft'
 import { AnnualReportCTA } from '@/components/AnnualReportCTA'
@@ -30,6 +31,7 @@ export default function Home() {
         <AnnualReportCTA mailchimpUrl={mailchimpUrl} />
         <IdentificationInformationDark ref={resultRef} />
         <IdentificationInformationLeft />
+        <Outreach />
         <Newsletter mailchimpUrl={mailchimpUrl} />
         <Partners />
       </main>

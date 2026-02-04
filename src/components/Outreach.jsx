@@ -8,7 +8,7 @@ const outreachPrograms = [
         name: 'Face to Face',
         logo: face2face,
         website: 'https://facetofacegermantown.org/',
-        description: 'We partner with Face2Face to provide essential identification services to Germantown.',
+        description: 'We partner with Face to Face to provide essential identification services to Germantown.',
         activities: [
             'Host a computer lab to assist community members with digital services',
             'Work with their birth certificate clinic to help attendees obtain vital documents',

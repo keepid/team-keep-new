@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import face2face from '@/images/logos/face2face.png'
+import freeLibrary from '@/images/free-library-partnership.png'
 
 const outreachPrograms = [
     {
@@ -13,6 +14,17 @@ const outreachPrograms = [
             'Host a weekly computer lab to assist community members with digital services from job searches to benefits applications',
             'Work with their birth certificate clinic to help attendees store digital copies of vital documents',
             'Assist clinic attendees with completing social security card applications',
+        ],
+    },
+    {
+        name: 'Free Library of Philadelphia',
+        logo: freeLibrary,
+        website: 'https://www.freelibrary.org/',
+        description: 'At Parkway Central library, we host ID application clinics the first and third Thursday of each month from 12-4pm.',
+        activities: [
+            'Apply for Social Security Cards, Birth Certificates, Voter Registration, and Photo IDs',
+            'Tailor needs for people with missing IDs or without addresses to mail',
+            "Provide digital backups on keep.id for clients' current documents",
         ],
     },
 ]
@@ -27,13 +39,13 @@ export function Outreach() {
                 <p className="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-gray-700">
                     We work directly with community organizations to provide identification services where they're needed most.
                 </p>
-                <div className="mx-auto mt-8 max-w-4xl">
+                <div className="mx-auto mt-8 max-w-4xl space-y-8">
                     {outreachPrograms.map((program) => (
                         <div
                             key={program.name}
                             className="rounded-2xl bg-white p-6 sm:p-8 shadow-lg"
                         >
-                            <div className="flex flex-col items-center sm:flex-row sm:items-center gap-6">
+                            <div className="flex flex-col items-center sm:flex-row sm:items-center gap-8 sm:gap-12">
                                 <div className="flex-shrink-0">
                                     <a
                                         href={program.website}
@@ -44,7 +56,7 @@ export function Outreach() {
                                         <Image
                                             src={program.logo}
                                             alt={program.name}
-                                            className="h-20 w-auto object-contain"
+                                            className="w-48 sm:w-72 h-auto object-contain"
                                             unoptimized
                                         />
                                     </a>

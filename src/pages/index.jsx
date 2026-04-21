@@ -5,7 +5,6 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
 import { Partners } from '@/components/Partners'
-import { Outreach } from '@/components/Outreach'
 import { IdentificationInformationDark } from '@/components/IdentificationInformationDark'
 import { IdentificationInformationLeft } from '@/components/IdentificationInformationLeft'
 import { AnnualReportCTA } from '@/components/AnnualReportCTA'
@@ -15,7 +14,7 @@ export default function Home() {
   const resultRef = useRef(null)
 
   const mailchimpUrl =
-    'https://keep.us7.list-manage.com/subscribe/post?u=9896e51b9ee0605d5e6745f82&amp;id=f16b440eb5'
+    'https://keep.us7.list-manage.com/subscribe/post?u=9896e51b9ee0605d5e6745f82&id=f16b440eb5'
   return (
     <>
       <Head>
@@ -31,7 +30,6 @@ export default function Home() {
         <AnnualReportCTA mailchimpUrl={mailchimpUrl} />
         <IdentificationInformationDark ref={resultRef} />
         <IdentificationInformationLeft />
-        <Outreach />
         <Newsletter mailchimpUrl={mailchimpUrl} />
         <Partners />
       </main>

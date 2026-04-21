@@ -99,10 +99,22 @@ export const Footer = (props) => {
       </h2>
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="flex-direction:row flex flex-nowrap items-center gap-4">
-            <Logo className="h-12 w-auto text-slate-900" />
-            <div className="font-logo text-3xl font-bold text-purple-primary-light">
-              Team Keep
+          <div>
+            <div className="flex flex-nowrap items-center gap-4">
+              <Logo className="h-12 w-auto text-slate-900" />
+              <div className="font-logo text-3xl font-bold text-purple-primary-light">
+                Team Keep
+              </div>
+            </div>
+            <div className="mt-6">
+              <p className="text-sm font-semibold uppercase tracking-wide text-purple-primary-light">
+                Headquartered in West Philadelphia
+              </p>
+              <address className="mt-2 not-italic text-sm leading-6 text-gray-300">
+                3675 Market Street, Ste 200
+                <br />
+                Philadelphia, PA 19144
+              </address>
             </div>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">

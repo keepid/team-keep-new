@@ -109,7 +109,7 @@ export const Footer = () => {
               <address className="mt-2 not-italic text-sm leading-6 text-gray-300">
                 3675 Market Street, Ste 200
                 <br />
-                Philadelphia, PA 19144
+                Philadelphia, PA 19104
               </address>
             </div>
           </div>

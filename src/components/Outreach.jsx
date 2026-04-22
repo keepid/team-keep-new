@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import face2face from '@/images/logos/face2face.png'
 import freeLibrary from '@/images/free-library-partnership.png'
+import whyNotProsper from '@/images/logos/whyNotProsper.png'
 import jeffersonPartnership from '@/images/jefferson-partnership.jpg'
 
 const outreachPrograms = [
@@ -31,13 +32,12 @@ const outreachPrograms = [
         ],
     },
     {
-        name: 'The REV Van',
-        logo: null,
-        placeholder: 'rev van',
+        name: 'Why Not Prosper REV Van',
+        logo: whyNotProsper,
         website:
             'https://metrophiladelphia.com/stories/rolling-engagement-van-offers-services-to-formerly-incarcerated-philadelphians,97653',
         description:
-            "We ride along with Philadelphia's Rolling Engagement Van (REV) to meet formerly incarcerated Philadelphians where they are and connect them with the identification and services they need to rebuild their lives.",
+            "We ride along with Why Not Prosper's Rolling Engagement Van (REV) to meet formerly incarcerated Philadelphians where they are and connect them with the identification and services they need to rebuild their lives.",
         activities: [
             'Join mobile outreach stops across Philadelphia to serve returning citizens on the ground',
             'Assist clients with replacing lost IDs, birth certificates, and Social Security cards',
@@ -96,7 +96,7 @@ export function Outreach() {
                                             />
                                         ) : (
                                             <div className="flex h-32 w-48 items-center justify-center rounded-xl bg-purple-primary-light px-4 text-center text-lg font-semibold text-gray-900 sm:h-40 sm:w-72 sm:text-xl">
-                                                {program.placeholder ?? program.name}
+                                                {program.name}
                                             </div>
                                         )}
                                     </a>

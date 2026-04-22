@@ -7,6 +7,8 @@ import { OurValues } from '@/components/OurValues'
 import { FAQs } from '@/components/FAQs'
 
 export default function About() {
+  const mailchimpUrl =
+    'https://keep.us7.list-manage.com/subscribe/post?u=9896e51b9ee0605d5e6745f82&id=f16b440eb5'
   return (
     <>
       <Head>
@@ -22,7 +24,7 @@ export default function About() {
         <OurValues /> 
         <FAQs />
       </main>
-      <Footer />
+      <Footer mailchimpUrl={mailchimpUrl} />
     </>
   )
 }

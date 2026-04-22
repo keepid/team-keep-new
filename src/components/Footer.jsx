@@ -105,7 +105,7 @@ export const Footer = (props) => {
               </div>
             </div>
             <div className="mt-6">
-              <p className="text-sm font-semibold uppercase tracking-wide text-purple-primary-light">
+              <p className="text-sm font-semibold text-purple-primary-light">
                 Headquartered in West Philadelphia
               </p>
               <address className="mt-2 not-italic text-sm leading-6 text-gray-300">

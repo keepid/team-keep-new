@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import face2face from '@/images/logos/face2face.png'
 import freeLibrary from '@/images/free-library-partnership.png'
+import whyNotProsper from '@/images/logos/whyNotProsper.png'
+import jeffersonPartnership from '@/images/jefferson-partnership.jpg'
 
 const outreachPrograms = [
     {
@@ -31,6 +33,7 @@ const outreachPrograms = [
     },
     {
         name: 'The REV Van',
+        logo: whyNotProsper,
         website:
             'https://metrophiladelphia.com/stories/rolling-engagement-van-offers-services-to-formerly-incarcerated-philadelphians,97653',
         description:
@@ -42,7 +45,8 @@ const outreachPrograms = [
         ],
     },
     {
-        name: "Jefferson Methadone Clinic",
+        name: 'Jefferson MATER and Family Center',
+        logo: jeffersonPartnership,
         website: 'https://www.jeffersonhealth.org/',
         description:
             "We partner with Jefferson's MATER Family Center and My Sister's Place to support mothers and families in recovery with the documents they need to access housing, benefits, and employment.",

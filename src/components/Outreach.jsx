@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import face2face from '@/images/logos/face2face.png'
 import freeLibrary from '@/images/free-library-partnership.png'
-import whyNotProsper from '@/images/logos/whyNotProsper.png'
 import jeffersonPartnership from '@/images/jefferson-partnership.jpg'
 
 const outreachPrograms = [
@@ -33,7 +32,8 @@ const outreachPrograms = [
     },
     {
         name: 'The REV Van',
-        logo: whyNotProsper,
+        logo: null,
+        placeholder: 'rev van',
         website:
             'https://metrophiladelphia.com/stories/rolling-engagement-van-offers-services-to-formerly-incarcerated-philadelphians,97653',
         description:
@@ -96,7 +96,7 @@ export function Outreach() {
                                             />
                                         ) : (
                                             <div className="flex h-32 w-48 items-center justify-center rounded-xl bg-purple-primary-light px-4 text-center text-lg font-semibold text-gray-900 sm:h-40 sm:w-72 sm:text-xl">
-                                                {program.name}
+                                                {program.placeholder ?? program.name}
                                             </div>
                                         )}
                                     </a>

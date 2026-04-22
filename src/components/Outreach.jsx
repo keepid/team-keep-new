@@ -15,8 +15,8 @@ const outreachPrograms = [
             'We partner with Face to Face to provide essential identification services to Germantown.',
         activities: [
             'Host a weekly computer lab to assist community members with digital services from job searches to benefits applications',
-            'Work with their birth certificate clinic to help attendees store digital copies of vital documents',
-            'Assist clinic attendees with completing social security card applications',
+            'Work with their Birth Certificate clinic to help attendees store digital copies of vital documents',
+            'Assist clinic attendees with completing Social Security Card applications',
         ],
     },
     {
@@ -28,7 +28,7 @@ const outreachPrograms = [
         activities: [
             'Apply for Social Security Cards, Birth Certificates, Voter Registration, and Photo IDs',
             'Tailor needs for people with missing IDs or without addresses to mail',
-            "Provide digital backups on keep.id for clients' current documents",
+            "Provide digital backups on Keep.id for clients' current documents",
         ],
     },
     {
@@ -40,8 +40,8 @@ const outreachPrograms = [
             "We ride along with Why Not Prosper's Rolling Engagement Van (REV) to meet formerly incarcerated Philadelphians where they are and connect them with the identification and services they need to rebuild their lives.",
         activities: [
             'Join mobile outreach stops across Philadelphia to serve returning citizens on the ground',
-            'Assist clients with replacing lost IDs, birth certificates, and Social Security cards',
-            'Connect attendees with Keep.id so they have a secure digital backup of their vital documents',
+            'Assist clients with replacing lost Photo IDs, Birth Certificates, and Social Security cards',
+            'Connect attendees with Keep.id so they have a secure digital backup of their core documents',
         ],
     },
     {
@@ -52,8 +52,8 @@ const outreachPrograms = [
             "We partner with Jefferson's MATER Family Center and My Sister's Place to support mothers and families in recovery with the documents they need to access housing, benefits, and employment.",
         activities: [
             'Run on-site ID clinics alongside Jefferson care teams',
-            'Help clients apply for Social Security Cards, birth certificates, and Photo IDs',
-            "Provide digital backups on keep.id so clients never lose access to their documents again",
+            'Help clients apply for Social Security Cards, Birth Certificates, and Photo IDs',
+            "Provide digital backups on Keep.id so clients never lose access to their documents again",
         ],
     },
 ]

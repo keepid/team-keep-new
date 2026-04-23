@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 import face2face from '@/images/logos/face2face.png'
 import freeLibrary from '@/images/free-library-partnership.png'
 import whyNotProsper from '@/images/logos/whyNotProsper.png'
-import jeffersonPartnership from '@/images/jefferson-partnership.jpg'
+// import jeffersonPartnership from '@/images/jefferson-partnership.jpg'
 
 const outreachPrograms = [
     {
@@ -44,18 +44,18 @@ const outreachPrograms = [
             'Connect attendees with Keep.id so they have a secure digital backup of their core documents',
         ],
     },
-    {
-        name: 'Jefferson MATER and Family Center',
-        logo: jeffersonPartnership,
-        website: 'https://www.jeffersonhealth.org/',
-        description:
-            "We partner with Jefferson's MATER Family Center and My Sister's Place to support mothers and families in recovery with the documents they need to access housing, benefits, and employment.",
-        activities: [
-            'Run on-site ID clinics alongside Jefferson care teams',
-            'Help clients apply for Social Security Cards, Birth Certificates, and Photo IDs',
-            "Provide digital backups on Keep.id so clients never lose access to their documents again",
-        ],
-    },
+    // {
+    //     name: 'Jefferson MATER and Family Center',
+    //     logo: jeffersonPartnership,
+    //     website: 'https://www.jeffersonhealth.org/',
+    //     description:
+    //         "We partner with Jefferson's MATER Family Center and My Sister's Place to support mothers and families in recovery with the documents they need to access housing, benefits, and employment.",
+    //     activities: [
+    //         'Run on-site ID clinics alongside Jefferson care teams',
+    //         'Help clients apply for Social Security Cards, Birth Certificates, and Photo IDs',
+    //         "Provide digital backups on Keep.id so clients never lose access to their documents again",
+    //     ],
+    // },
 ]
 
 export function Outreach() {

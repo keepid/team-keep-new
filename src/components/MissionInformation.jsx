@@ -14,13 +14,13 @@ export const MissionInformation = forwardRef(function MissionInformation(
           <div className="lg:ml-auto lg:pl-4 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                A Comprehsive ID Package
+                A Comprehensive ID Package
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Missing ID should not mean missing opportunity
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Keep.id provides specialized, end-to-end assistance with Birth Certificates, 
+                We provide specialized, end-to-end assistance with Birth Certificates, 
                 Photo ID/Driver's Licenses, Social Security Cards, supporting records, and other administrative documents, allowing clients to take the next step. 
               </p>
               <a

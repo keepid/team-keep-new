@@ -14,6 +14,10 @@ export default function Document() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=DM+Sans:wght@400;500;700&display=swap"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=computer,diversity_3,local_library,phone_in_talk&display=block"
+        />
         
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-391118279"></script>

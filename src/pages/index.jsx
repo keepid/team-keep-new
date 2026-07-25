@@ -5,13 +5,21 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
 import { Partners } from '@/components/Partners'
+import { MissionInformation } from '@/components/MissionInformation'
+import { OurImpact } from '@/components/OurImpact'
 import { IdentificationInformationDark } from '@/components/IdentificationInformationDark'
 import { IdentificationInformationLeft } from '@/components/IdentificationInformationLeft'
+import { FullIDServices } from '@/components/FullIDServices'
+import { OurServices } from '@/components/OurServices'
 import { AnnualReportCTA } from '@/components/AnnualReportCTA'
 import { useRef } from 'react'
 
 export default function Home() {
   const resultRef = useRef(null)
+  const annualReportRef = useRef(null)
+  const ourServicesRef = useRef(null)
+  const mailchimpUrl =
+    'https://keep.us7.list-manage.com/subscribe/post?u=9896e51b9ee0605d5e6745f82&amp;id=f16b440eb5'
 
   return (
     <>
@@ -25,11 +33,19 @@ export default function Home() {
       <Header />
       <main>
         <Hero resultRef={resultRef} />
-        <AnnualReportCTA />
-        <IdentificationInformationDark ref={resultRef} />
-        <IdentificationInformationLeft />
-        <Newsletter />
+        <MissionInformation ref={resultRef} />
+        <OurImpact annualReportRef={annualReportRef} />
+        <FullIDServices ourServicesRef={ourServicesRef} />
+        <IdentificationInformationDark />
+        <OurServices ref={ourServicesRef} />
+        
         <Partners />
+        {/* <IdentificationInformationLeft /> */}
+        <Newsletter mailchimpUrl={mailchimpUrl} />
+        <AnnualReportCTA
+          ref={annualReportRef}
+          mailchimpUrl={mailchimpUrl}
+        />
       </main>
       <Footer />
     </>

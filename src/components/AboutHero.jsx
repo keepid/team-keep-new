@@ -31,7 +31,11 @@ export const AboutHero = () => {
             </div>
           </div>
           <div className="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
-            <Image src={missionHeroImage} />
+            <Image
+              src={missionHeroImage}
+              alt="Team Keep serving the Philadelphia community"
+              className="h-auto w-full max-w-full object-contain"
+            />
           </div>
         </div>
       </div>

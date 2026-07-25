@@ -2,39 +2,47 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+import { smoothScrollTo } from '../utils/smoothScroll'
+
 export const Hero = ({ resultRef }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-[url('../images/background-hero.png')] bg-cover bg-center">
+    <div className="relative bg-gray-950 bg-[url('../images/computerlab.png')] bg-cover bg-[position:center_45%] bg-no-repeat sm:bg-[length:100%_auto]">
+      <div
+        className="absolute inset-0 bg-gray-950/75"
+        aria-hidden="true"
+      />
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="lg:py-42 mx-auto max-w-2xl py-32 sm:py-48">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className=" relative rounded-full bg-slate-500/75 px-3 py-1 text-sm leading-6 text-white ring-2 ring-gray-100/0 hover:ring-gray-100/10">
-              To support our cause please donate here:  {'   '}
+              To support our cause please donate {'   '}
               <a
                 href="https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty"
                 target="_blank"
                 className="font-semibold text-grey-light"
               >
                 <span className="absolute inset-0" aria-hidden="true" />
-                Donate<span aria-hidden="true">&rarr;</span>
+                here<span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Empower people who experience homelessness
+              We remove the ID barriers that keep people from moving forward.
             </h1> 
             <p className="mt-6 text-lg leading-8 text-white">
-              Our online product, Keep.id, helps non-profits with identification
-              services for those experiencing homelessness.
+              Team Keep serves Philly residents facing housing instability who face barriers to recovering essential identity documents needed for housing, work, benefits, healthcare, treatment, and financial access.
+            </p>
+            <p className="mt-6 text-lg leading-8 text-white">
+              Our ID Community Clinics, enabled by our Keep.id Platform and Hotline, turn complicated documentation processes into a clear path forward.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <button
                 onClick={(e) => {
                   e.preventDefault()
-                  resultRef.current.scrollIntoView({ behavior: 'smooth' })
+                  smoothScrollTo(resultRef.current)
                 }}
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 motion-safe:animate-bounce"
               >

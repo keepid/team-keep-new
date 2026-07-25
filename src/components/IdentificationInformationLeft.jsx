@@ -31,7 +31,7 @@ export const IdentificationInformationLeft = () => {
             <Image
               src={myApplicationPng}
               alt="Product screenshot"
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+              className="h-auto w-full max-w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 lg:w-[57rem] lg:max-w-none"
               width={2432}
               height={1442}
             />

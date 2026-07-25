@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
+
 const securityHeaders = [
   {
     key: 'X-DNS-Prefetch-Control',
@@ -30,7 +32,10 @@ const securityHeaders = [
   },
 ]
 
-const nextConfig = {
+const createNextConfig = (phase) => ({
+  // Keep development manifests separate from production builds so running
+  // `next build` cannot corrupt an active `next dev` session.
+  distDir: phase === PHASE_DEVELOPMENT_SERVER ? '.next-dev' : '.next',
   reactStrictMode: true,
   experimental: {
     scrollRestoration: true,
@@ -56,6 +61,6 @@ const nextConfig = {
       },
     ]
   },
-}
+})
 
-module.exports = nextConfig
+module.exports = createNextConfig

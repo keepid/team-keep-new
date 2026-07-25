@@ -3,7 +3,6 @@ import MailchimpSubscribe from 'react-mailchimp-subscribe'
 const navigation = {
   learnMore: [
     { name: 'Home', href: '/' },
-    { name: 'Stories', href: '/stories' },
     { name: 'Keep.id', href: 'https://keep.id' },
   ],
   getInvolved: [
@@ -16,7 +15,6 @@ const navigation = {
       href: 'https://keep.id/careers',
     },
   ],
-  company: [{ name: 'About Us', href: '/about' }],
   legal: [{ name: 'Privacy Policy', href: 'https://keep.id/privacy-policy' }],
   social: [
     {
@@ -142,25 +140,8 @@ export const Footer = (props) => {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div>
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Company
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">
                   Legal
                 </h3>

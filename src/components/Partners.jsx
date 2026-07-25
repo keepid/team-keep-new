@@ -37,7 +37,12 @@ export function Partners() {
               key={sponsor.name}
               className="flex items-center justify-center"
             >
-              <Image src={sponsor.logo} alt={sponsor.name} unoptimized />
+              <Image
+                src={sponsor.logo}
+                alt={sponsor.name}
+                className="h-auto max-h-32 w-full max-w-full object-contain"
+                unoptimized
+              />
             </a>
           ))}
         </div>

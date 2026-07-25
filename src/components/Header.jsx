@@ -6,15 +6,13 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'About Us', href: '/about' },
   { name: 'Our Team', href: '/team' },
-  { name: 'Stories', href: '/stories' },
 ]
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-[#1b1d21]/75">
+    <header className="absolute inset-x-0 top-0 z-50 bg-gray-950/90">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"

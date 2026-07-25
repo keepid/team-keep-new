@@ -1,5 +1,4 @@
 import React, { forwardRef } from 'react'
-import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import { ArrowUpRightIcon } from '@heroicons/react/20/solid'
 
 const timeline = [
@@ -119,59 +118,6 @@ export const AnnualReportCTA = forwardRef(function AnnualReportCTA(props, ref) {
             ))}
           </ol>
         </div>
-
-        {/* <div className="mx-auto mt-16 max-w-2xl text-center">
-          <p className="mx-auto max-w-xl text-lg leading-8 text-gray-600">
-            Stay connected with us and join our newsletter to receive updates on
-            our platform and our impact.
-          </p>
-          <MailchimpSubscribe
-            url={props.mailchimpUrl}
-            render={({ subscribe, status }) => (
-              <form
-                className="mt-10"
-                onSubmit={(event) => {
-                  event.preventDefault()
-                  subscribe({ EMAIL: event.target.email.value })
-                }}
-              >
-                <div className="flex flex-col gap-4 sm:flex-row sm:gap-x-4">
-                  <label htmlFor="annual-report-email" className="sr-only">
-                    Email address
-                  </label>
-                  <input
-                    id="annual-report-email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    required
-                    className="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    placeholder="Enter your email"
-                  />
-                  <button
-                    type="submit"
-                    className="flex-none rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-                {status === 'sending' && (
-                  <p className="mt-3 text-sm text-gray-600">Sending...</p>
-                )}
-                {status === 'error' && (
-                  <p className="mt-3 text-sm text-red">
-                    This email address is not valid.
-                  </p>
-                )}
-                {status === 'success' && (
-                  <p className="mt-3 text-sm text-green">
-                    Thank you for subscribing!
-                  </p>
-                )}
-              </form>
-            )}
-          />
-        </div> */}
       </div>
     </section>
   )

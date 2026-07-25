@@ -1,5 +1,4 @@
 import { Logo } from '@/components/Logo'
-import MailchimpSubscribe from 'react-mailchimp-subscribe'
 const navigation = {
   learnMore: [
     { name: 'Home', href: '/' },
@@ -52,7 +51,6 @@ const navigation = {
           viewBox="0 0 28 28"
           {...props}
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4"
         >
           <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
         </svg>
@@ -77,7 +75,6 @@ const navigation = {
       icon: (props) => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4"
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -88,8 +85,7 @@ const navigation = {
   ],
 }
 
-export const Footer = (props) => {
-  const mailchimpUrl = props.mailchimpUrl
+export const Footer = () => {
   return (
     <footer className="bg-gray-900" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -97,13 +93,25 @@ export const Footer = (props) => {
       </h2>
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="flex-direction:row flex flex-nowrap items-center gap-4">
-            <Logo className="h-12 w-auto text-slate-900" />
-            <div className="font-logo text-3xl font-bold text-purple-primary-light">
-              Team Keep
+          <div>
+            <div className="flex flex-nowrap items-center gap-4">
+              <Logo className="h-12 w-auto text-slate-900" />
+              <div className="font-logo text-3xl font-bold text-purple-primary-light">
+                Team Keep
+              </div>
+            </div>
+            <div className="mt-6">
+              <p className="text-sm font-semibold text-purple-primary-light">
+                Headquartered in West Philadelphia
+              </p>
+              <address className="mt-2 not-italic text-sm leading-5 text-gray-300">
+                3675 Market Street, Ste 200
+                <br />
+                Philadelphia, PA 19104
+              </address>
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div className="-mt-2 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">
@@ -161,66 +169,7 @@ export const Footer = (props) => {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
-          <div>
-            <h3 className="text-sm font-semibold leading-6 text-white">
-              Subscribe to our newsletter
-            </h3>
-            <p className="mt-2 text-sm leading-6 text-gray-300">
-              The latest news, articles, and resources, sent to your inbox
-              weekly.
-            </p>
-          </div>
-          <MailchimpSubscribe
-            url={mailchimpUrl}
-            render={({ subscribe, status }) => (
-              <form
-                className="mt-6 sm:flex sm:max-w-md lg:mt-0"
-                onSubmit={(e) => {
-                  e.preventDefault()
-                  subscribe({
-                    EMAIL: e.target.email.value,
-                  })
-                }}
-              >
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  id="email-address"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
-                  className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-56 sm:text-sm sm:leading-6"
-                  placeholder="Enter your email"
-                />
-                <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-                  <button
-                    type="submit"
-                    className="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                    onSubmit={(e) => {
-                      e.preventDefault()
-                      alert('Thank you for subscribing!')
-                    }}
-                  >
-                    Subscribe
-                  </button>
-                  {status === 'sending' && (
-                    <p className="my-auto">Sending...</p>
-                  )}
-                  {status === 'error' && (
-                    <p className="my-auto">This email address is not valid.</p>
-                  )}
-                  {status === 'success' && (
-                    <p className="my-auto">Thank you for subscribing!</p>
-                  )}
-                </div>
-              </form>
-            )}
-          />
-        </div>
-        <div className="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
+        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
               <a

@@ -18,9 +18,9 @@ export default function Home() {
   const resultRef = useRef(null)
   const annualReportRef = useRef(null)
   const ourServicesRef = useRef(null)
-
   const mailchimpUrl =
     'https://keep.us7.list-manage.com/subscribe/post?u=9896e51b9ee0605d5e6745f82&amp;id=f16b440eb5'
+
   return (
     <>
       <Head>
@@ -47,7 +47,7 @@ export default function Home() {
           mailchimpUrl={mailchimpUrl}
         />
       </main>
-      <Footer mailchimpUrl={mailchimpUrl} />
+      <Footer />
     </>
   )
 }

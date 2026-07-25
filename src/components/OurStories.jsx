@@ -11,7 +11,10 @@ export const OurStories = () => {
       .then((responseJSON) => {
         const { status } = responseJSON
         if (status === 'ok') {
-          setMediumData(responseJSON.items)
+          const filtered = responseJSON.items.filter(
+            (item) => !/movies?/i.test(item.title)
+          )
+          setMediumData(filtered)
         }
       })
   }, [])

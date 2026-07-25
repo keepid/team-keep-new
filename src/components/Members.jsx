@@ -14,42 +14,44 @@ import johnOndik from '@/images/people/johnOndik.png'
 import ravindarGujaral from '@/images/people/ravindarGujaral.jpg'
 import karissaForino from '@/images/people/karissaForino.jpg'
 import danTreglia from '@/images/people/danTreglia.jpg'
-import kaylaWhite from '@/images/people/kaylaWhite.jpg'
-import allyKim from '@/images/people/allyKim.png'
-import samuelLee from '@/images/people/samuelLee.png'
 import michaelPorter from '@/images/people/michaelPorter.jpg'
 import nancyPham from '@/images/people/nancyPham.jpg'
 import timLiang from '@/images/people/timLiang.png'
 import vanessaChung from '@/images/people/vanessaChung.jpg'
 import thomasCordingley from '@/images/people/thomasCordingley.png'
 import davidFu from '@/images/people/davidFu.jpg'
-
+import jefferyChen from '@/images/people/jefferyChen.jpg'
 
 const teams = [
   {
-    name: 'Keep.id',
-    largeText: 'Leadership',
+    name: 'Team Keep',
+    largeText: 'Executive Team',
     people: [
       {
         name: 'Connor Chong',
-        role: 'Executive Director, CTO',
+        role: 'Executive Director',
         image: connorChong,
       },
       {
-        name: 'Steffen Cornwell',
-        role: 'Nonprofit Liaison Lead',
-        image: steffenCornwell,
-      },
-      {
         name: 'Daniel Joo',
-        role: 'Chief Operations Officer',
+        role: 'Co-Executive Director, Director of Technology',
         image: danielJoo,
       },
       {
-        name: 'Kayla White',
-        role: 'Grantwriting Lead',
-        image: kaylaWhite,
-      }
+        name: 'Steffen Cornwell',
+        role: 'Director of Services',
+        image: steffenCornwell,
+      },
+      {
+        name: 'Jeffery Chen',
+        role: 'Director of Development',
+        image: jefferyChen,
+      },
+      {
+        name: 'Nancy Pham',
+        role: 'Director of Digital Design',
+        image: nancyPham,
+      },
     ],
   },
   {
@@ -99,8 +101,13 @@ const teams = [
     people: [
       {
         name: 'Connor Chong',
-        role: 'Engineering Lead',
+        role: 'Co-Engineering Lead',
         image: connorChong,
+      },
+      {
+        name: 'Daniel Joo',
+        role: 'Co-Engineering Lead',
+        image: danielJoo,
       },
       {
         name: 'Vanessa Chung',
@@ -118,11 +125,6 @@ const teams = [
         image: davidFu,
       },
       {
-        name: 'Daniel Joo',
-        role: 'Frontend Engineer',
-        image: danielJoo,
-      },
-      {
         name: 'Tim Liang',
         role: 'Frontend Engineer',
         image: timLiang,
@@ -136,59 +138,20 @@ const teams = [
         name: 'Michael Porter',
         role: 'Frontend Engineer',
         image: michaelPorter,
-      }
-    ],
-  },
-  {
-    name: 'Keep.id',
-    largeText: 'Nonprofit Liaisons',
-    people: [
-      {
-        name: 'Steffen Cornwell',
-        role: 'Nonprofit Liaison Lead',
-        image: steffenCornwell,
-      }
-    ],
-  },
-  {
-    name: 'Keep.id',
-    largeText: 'Grantwriting',
-    people: [
-      {
-        name: 'Kayla White',
-        role: 'Grantwriting Lead',
-        image: kaylaWhite,
-      }
-    ],
-  },
-  {
-    name: 'Keep.id',
-    largeText: 'Product',
-    people: [
-      {
-        name: 'Connor Chong',
-        role: 'Product Lead',
-        image: connorChong,
       },
-      {
-        name: 'Steffen Cornwell',
-        role: 'Product Manager',
-        image: steffenCornwell,
-      }
-    ],
-  },
-  {
-    name: 'Keep.id',
-    largeText: 'Legal and Ops',
-    people: [
-      {
-        name: 'Daniel Joo',
-        role: 'Chief Operations Officer',
-        image: danielJoo,
-      }
     ],
   },
 ]
+
+function getInitials(name) {
+  return name
+    .split(' ')
+    .map((part) => part[0])
+    .filter(Boolean)
+    .slice(0, 2)
+    .join('')
+    .toUpperCase()
+}
 
 function ImageClipPaths({ id, ...props }) {
   return (
@@ -256,7 +219,7 @@ export function Members() {
             <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
               {({ selectedIndex }) =>
                 teams.map((team, teamIndex) => (
-                  <div key={team.name} className="relative lg:pl-8">
+                  <div key={team.largeText} className="relative lg:pl-8">
                     <DiamondIcon
                       className={clsx(
                         'absolute left-[-0.5px] top-[0.5625rem] hidden h-1.5 w-1.5 overflow-visible lg:block',
@@ -291,7 +254,7 @@ export function Members() {
           <Tab.Panels className="lg:col-span-3">
             {teams.map((team) => (
               <Tab.Panel
-                key={team.name}
+                key={team.largeText}
                 className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 [&:not(:focus-visible)]:focus:outline-none"
                 unmount={false}
               >
@@ -312,13 +275,19 @@ export function Members() {
                         className="absolute inset-0 bg-indigo-50"
                         style={{ clipPath: `url(#${id}-${personIndex % 3})` }}
                       >
-                        <Image
-                          className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
-                          src={person.image}
-                          alt=""
-                          priority
-                          sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        />
+                        {person.image ? (
+                          <Image
+                            className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                            src={person.image}
+                            alt=""
+                            priority
+                            sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                          />
+                        ) : (
+                          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-indigo-100 to-blue-200 text-5xl font-semibold text-blue-900 transition duration-300 group-hover:scale-110">
+                            {getInitials(person.name)}
+                          </div>
+                        )}
                       </div>
                     </div>
                     <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">

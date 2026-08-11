@@ -4,6 +4,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 import Link from 'next/link'
+import Script from 'next/script'
 
 const navigation = [
   { name: 'Our Team', href: '/team' },
@@ -45,6 +46,14 @@ export function Header() {
               {item.name}
             </Link>
           ))}
+          <a
+            href="https://luma.com/event/evt-7qez1Ke8tGJdXnE"
+            className="inline-flex items-center rounded-2xl bg-blue-600 px-4 py-2 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+            data-luma-action="checkout"
+            data-luma-event-id="evt-7qez1Ke8tGJdXnE"
+          >
+            Register for Our Fundraiser
+          </a>
           <Button
             href="https://keep.id"
             className="bg-slate-700 text-md m-auto items-center font-semibold leading-6 hover:bg-slate-600"
@@ -75,7 +84,7 @@ export function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-0 z-50 w-full h-screen overflow-y-auto bg-white px-6 py-6 shadow-2xl sm:inset-auto sm:left-1/2 sm:top-2 sm:bottom-2 sm:h-[calc(100vh-1rem)] sm:w-[min(90vw,64rem)] sm:-translate-x-1/2 sm:rounded-3xl sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Logo className="h-12 w-auto text-slate-900" />
             <div className="font-logo text-3xl font-medium">Team Keep</div>
@@ -88,53 +97,60 @@ export function Header() {
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
+          <div className="mt-6 flow-root text-center">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="mx-auto block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
                 ))}
+                <a
+                  href="https://luma.com/event/evt-7qez1Ke8tGJdXnE"
+                  className="mx-auto block rounded-2xl bg-blue-600 p-4 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                  data-luma-action="checkout"
+                  data-luma-event-id="evt-7qez1Ke8tGJdXnE"
+                >
+                  Register for Our Fundraiser
+                </a>
               </div>
               <div className="py-6">
-                <h1 className="hero-header pb-6 text-black">
+                <h1 className="hero-header pb-6 text-black text-center">
                   Help us build a safety net for our most vulnerable citizens.
                 </h1>
 
-                <a href="https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty"
-                    target="_blank">
-                  <div className="bg-purple-primary lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-                    <Button
-                      className="bg-purple-primary"
-                      href="https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty"
-                      target="_blank"
-                    >
-                      Donate Now
-                    </Button>
-                  </div>
-                </a>
-                <a href="https://keep.id"
-                    target="_blank">
-                  <div className="mt-4 bg-slate-700 lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-                    <Button
-                      className="bg-slate-700"
-                      href="https://keep.id"
-                      target="_blank"
-                    >
-                      Visit Keep.id
-                    </Button>
-                  </div>
-                </a>
+                <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                  <a
+                    href="https://www.zeffy.com/en-US/donation-form/sponsor-an-id-for-an-individual-in-poverty"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex rounded-2xl bg-purple-primary px-6 py-3 text-base font-semibold text-white hover:bg-purple-700"
+                  >
+                    Donate Now
+                  </a>
+                  <a
+                    href="https://keep.id"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex rounded-2xl bg-slate-700 px-6 py-3 text-base font-semibold text-white hover:bg-slate-600"
+                  >
+                    Visit Keep.id
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </Dialog.Panel>
       </Dialog>
+      <Script
+        id="luma-checkout"
+        src="https://embed.lu.ma/checkout-button.js"
+        strategy="afterInteractive"
+      />
     </header>
   )
 }

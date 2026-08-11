@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import { smoothScrollTo } from '../utils/smoothScroll'
 
-export const Hero = ({ resultRef }) => {
+export const Hero = ({ resultRef, eventRef }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -38,7 +38,7 @@ export const Hero = ({ resultRef }) => {
             <p className="mt-6 text-lg leading-8 text-white">
               Our ID Community Clinics, enabled by our Keep.id Platform and Hotline, turn complicated documentation processes into a clear path forward.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-x-6">
               <button
                 onClick={(e) => {
                   e.preventDefault()
@@ -47,6 +47,15 @@ export const Hero = ({ resultRef }) => {
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 motion-safe:animate-bounce"
               >
                 Learn More
+              </button>
+              <button
+                onClick={(e) => {
+                  e.preventDefault()
+                  smoothScrollTo(eventRef.current)
+                }}
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Our Upcoming Fundraiser
               </button>
               <a
                 href="https://keep.id"

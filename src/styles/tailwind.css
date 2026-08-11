@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Force Luma checkout modal to full viewport height */
+.luma-checkout--overlay,
+.luma-checkout--overlay.luma-show {
+  align-items: stretch !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.luma-checkout--modal {
+  position: fixed !important;
+  width: min(94vw, 72rem) !important;
+  max-width: min(94vw, 72rem) !important;
+  top: 7.5vh !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin: 0 !important;
+  padding-top: 2rem !important;
+  border-radius: 1.5rem !important;
+  border-top-left-radius: 1.5rem !important;
+  border-top-right-radius: 1.5rem !important;
+  overflow: hidden !important;
+}
+
+.luma-checkout--close-btn {
+  position: absolute !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  z-index: 20 !important;
+  border-radius: 9999px !important;
+  background: rgba(255,255,255,0.9) !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

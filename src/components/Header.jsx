@@ -8,6 +8,7 @@ import Script from 'next/script'
 
 const navigation = [
   { name: 'Our Team', href: '/team' },
+  { name: 'Ways to Give', href: '/ways-to-give' },
 ]
 
 export function Header() {
@@ -18,14 +19,14 @@ export function Header() {
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <a href="/">
+        <Link href="/">
           <div className="flex-direction:row flex flex-nowrap items-center gap-4">
             <Logo className="h-12 w-auto text-slate-900" />
             <div className="font-logo text-3xl font-medium text-white">
               Team Keep
             </div>
           </div>
-        </a>
+        </Link>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -36,7 +37,7 @@ export function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden flex-row lg:flex lg:gap-x-12">
+        <div className="hidden flex-row lg:flex lg:gap-x-6 xl:gap-x-12">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -47,7 +48,7 @@ export function Header() {
             </Link>
           ))}
           <a
-            href="https://luma.com/event/evt-7qez1Ke8tGJdXnE"
+            href="https://luma.com/keepid-5yrs"
             className="inline-flex items-center rounded-2xl bg-blue-600 px-4 py-2 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
             data-luma-action="checkout"
             data-luma-event-id="evt-7qez1Ke8tGJdXnE"
@@ -110,7 +111,7 @@ export function Header() {
                   </a>
                 ))}
                 <a
-                  href="https://luma.com/event/evt-7qez1Ke8tGJdXnE"
+                  href="https://luma.com/keepid-5yrs"
                   className="mx-auto block rounded-2xl bg-blue-600 p-4 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
                   data-luma-action="checkout"
                   data-luma-event-id="evt-7qez1Ke8tGJdXnE"

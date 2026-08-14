@@ -8,7 +8,6 @@ import {
 
 const PHILADELPHIA_CENTER = { lat: 39.9526, lng: -75.1652 }
 
-// Add or update partner and library locations here.
 const locations = [
   {
     name: 'Why Not Prosper',
@@ -58,6 +57,12 @@ const locations = [
     address: '2228 Cottman Ave, Philadelphia, PA 19149',
     position: { lat: 40.0481325, lng: -75.0640666 },
   },
+  {
+    name: 'Chosen 300 Ministries',
+    type: 'Partner',
+    address: '3959 Lancaster Ave, Philadelphia, PA 19104',
+    position: { lat: 39.9631784, lng: -75.201716 },
+  }
 ]
 
 const mapOptions = {

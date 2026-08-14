@@ -13,6 +13,10 @@ const navigation = {
       name: 'Volunteer',
       href: 'https://keep.id/careers',
     },
+    {
+      name: 'Ways to Give',
+      href: '/ways-to-give',
+    },
   ],
   legal: [{ name: 'Privacy Policy', href: 'https://keep.id/privacy-policy' }],
   social: [
@@ -100,7 +104,7 @@ export const Footer = () => {
                 Team Keep
               </div>
             </div>
-            <div className="mt-6">
+            <div className="mt-6 mb-12 xl:mb-0">
               <p className="text-sm font-semibold text-purple-primary-light">
                 Headquartered in West Philadelphia
               </p>

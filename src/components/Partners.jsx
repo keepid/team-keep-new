@@ -5,6 +5,8 @@ import { Container } from '@/components/Container'
 import whyNotProsper from '@/images/logos/whyNotProsper.png'
 import face2face from '@/images/logos/face2face.png'
 import freeLibrary from '@/images/logos/freeLibrary.png'
+import chosen300 from '@/images/logos/chosen300logo.jpg'
+
 const sponsors = [
   {
     name: 'Why Not Prosper',
@@ -21,6 +23,11 @@ const sponsors = [
     logo: freeLibrary,
     website: 'https://www.freelibrary.org/',
   },
+  {
+    name: 'Chosen 300 Ministries',
+    logo: chosen300,
+    website: 'https://www.chosen300.org/',
+  },
 ]
 
 export function Partners() {
@@ -33,18 +40,19 @@ export function Partners() {
         <p className="mx-auto mt-3 max-w-2xl text-center text-base leading-7 text-gray-600">
           We assist with direct ID services for Philadelphians.
         </p>
-        <div className="mx-auto mt-10 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-8 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+        <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 items-center justify-items-center gap-x-8 gap-y-8 md:grid-cols-4 lg:gap-x-12">
           {sponsors.map((sponsor) => (
             <a
               href={sponsor.website}
               target="_blank"
+              rel="noreferrer"
               key={sponsor.name}
-              className="flex items-center justify-center"
+              className="flex h-20 w-32 items-center justify-center sm:w-36 md:h-24 md:w-40"
             >
               <Image
                 src={sponsor.logo}
                 alt={sponsor.name}
-                className="h-auto max-h-32 w-full max-w-full object-contain"
+                className="h-auto max-h-full w-full object-contain"
                 unoptimized
               />
             </a>

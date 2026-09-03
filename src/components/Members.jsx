@@ -42,11 +42,11 @@ const teams = [
         role: 'Director of Services',
         image: steffenCornwell,
       },
-      {
-        name: 'Jeffery Chen',
-        role: 'Director of Development',
-        image: jefferyChen,
-      },
+      // {
+      //   name: 'Jeffery Chen',
+      //   role: 'Director of Development',
+      //   image: jefferyChen,
+      // },
       {
         name: 'Nancy Pham',
         role: 'Director of Digital Design',
@@ -109,36 +109,36 @@ const teams = [
         role: 'Co-Engineering Lead',
         image: danielJoo,
       },
-      {
-        name: 'Vanessa Chung',
-        role: 'Backend Engineer',
-        image: vanessaChung,
-      },
-      {
-        name: 'Thomas Cordingley',
-        role: 'Frontend Engineer',
-        image: thomasCordingley,
-      },
-      {
-        name: 'David Fu',
-        role: 'Frontend Engineer',
-        image: davidFu,
-      },
-      {
-        name: 'Tim Liang',
-        role: 'Frontend Engineer',
-        image: timLiang,
-      },
-      {
-        name: 'Nancy Pham',
-        role: 'Frontend Engineer',
-        image: nancyPham,
-      },
-      {
-        name: 'Michael Porter',
-        role: 'Frontend Engineer',
-        image: michaelPorter,
-      },
+      // {
+      //   name: 'Vanessa Chung',
+      //   role: 'Backend Engineer',
+      //   image: vanessaChung,
+      // },
+      // {
+      //   name: 'Thomas Cordingley',
+      //   role: 'Frontend Engineer',
+      //   image: thomasCordingley,
+      // },
+      // {
+      //   name: 'David Fu',
+      //   role: 'Frontend Engineer',
+      //   image: davidFu,
+      // },
+      // {
+      //   name: 'Tim Liang',
+      //   role: 'Frontend Engineer',
+      //   image: timLiang,
+      // },
+      // {
+      //   name: 'Nancy Pham',
+      //   role: 'Frontend Engineer',
+      //   image: nancyPham,
+      // },
+      // {
+      //   name: 'Michael Porter',
+      //   role: 'Frontend Engineer',
+      //   image: michaelPorter,
+      // },
     ],
   },
 ]

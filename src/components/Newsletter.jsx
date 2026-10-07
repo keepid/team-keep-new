@@ -1,9 +1,6 @@
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
-import { useState } from 'react'
 
-export const Newsletter = () => {
-  const [submitted, setSubmitted] = useState(false)
-
+export const Newsletter = ({ mailchimpUrl }) => {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -15,20 +12,14 @@ export const Newsletter = () => {
             <p className="mt-4 text-lg leading-8 text-gray-300">
               Stay up to date with our email newsletter!
             </p>
-            <form
-              className="mt-10"
-              onSubmit={(e) => {
-                e.preventDefault()
-                setSubmitted(true)
-              }}
-            >
+            <form className="mt-10" action={mailchimpUrl} method="post">
               <div className="mt-6 flex max-w-md gap-x-4">
                 <label htmlFor="email-address" className="sr-only">
                   Email address
                 </label>
                 <input
                   id="email-address"
-                  name="email"
+                  name="EMAIL"
                   type="email"
                   autoComplete="email"
                   required
@@ -42,11 +33,6 @@ export const Newsletter = () => {
                   Subscribe
                 </button>
               </div>
-              {submitted && (
-                <p className="mt-4 text-sm leading-6 text-gray-300">
-                  Thank you for subscribing!
-                </p>
-              )}
             </form>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">

@@ -21,7 +21,7 @@ export default function Home() {
   const ourServicesRef = useRef(null)
   const eventRef = useRef(null)
   const mailchimpUrl =
-    'https://keep.us7.list-manage.com/subscribe/post?u=9896e51b9ee0605d5e6745f82&amp;id=f16b440eb5'
+    'https://keep.us7.list-manage.com/subscribe/post?u=9896e51b9ee0605d5e6745f82&id=f16b440eb5'
 
   return (
     <>

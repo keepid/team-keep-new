@@ -12,7 +12,12 @@ export const Newsletter = ({ mailchimpUrl }) => {
             <p className="mt-4 text-lg leading-8 text-gray-300">
               Stay up to date with our email newsletter!
             </p>
-            <form className="mt-10" action={mailchimpUrl} method="post">
+            <form
+              className="mt-10"
+              action={mailchimpUrl}
+              method="post"
+              target="_blank"
+            >
               <div className="mt-6 flex max-w-md gap-x-4">
                 <label htmlFor="email-address" className="sr-only">
                   Email address
